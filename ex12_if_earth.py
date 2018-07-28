@@ -1,3 +1,4 @@
+# -*- conding: UTF-8 -*-
 from sys import argv
 from numpy import pi
 
@@ -10,7 +11,7 @@ def func_minu(a,b):
     return abs(c_a - c_b)
 
 
-r_earth = 6738  # km
+r_earth = 6000  # km
 r_mar = 3000 
 script,r_planet = argv
 if (func_minu(r_earth,r_planet) < func_minu(r_mar,r_planet)):
@@ -19,4 +20,4 @@ elif (func_minu(r_earth,r_planet) > func_minu(r_mar,r_planet)):
     print "The planet is closer to the Mars"
 else:
     print "The planet isn't closer to any of the planets"
-
+# 尽量不要比较两个浮点数的大小，因为系统的表示总会有误差。
