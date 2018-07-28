@@ -46,4 +46,5 @@ class child(parent):  # No.3:Alter between the two version
         print "I love you, my parent."
     def Tokid(self):
         print "Just do it!"
-#	super(child,self).altered()  这句话没有实现
+#	super(child,self).altered()  这句没有实现  
+
